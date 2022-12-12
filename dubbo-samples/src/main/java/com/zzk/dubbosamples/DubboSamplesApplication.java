@@ -1,5 +1,6 @@
-package com.zzk.security;
+package com.zzk.dubbosamples;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,10 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author zhouzhengke
  */
 @SpringBootApplication
-public class SecurityApplication {
+@EnableDubbo
+public class DubboSamplesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SecurityApplication.class, args);
+		SpringApplication.run(DubboSamplesApplication.class, args);
 	}
 
 }
